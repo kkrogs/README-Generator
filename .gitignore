@@ -1,0 +1,3 @@
+# anything I put inside of here will be ignored by git
+node_modules
+
