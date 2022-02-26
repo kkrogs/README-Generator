@@ -1,42 +1,85 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
+const generatorMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [
-    {
+const questions = [{
         type: 'input',
-        name: 'title',
-        message: 'What is the title of your project?',
-    },
-    {
+        name: 'Title',
+        message: 'What is the title of the project?',
+    }, {
         type: 'input',
-        name: 'description',
-        message: 'Please add a description of your project.',
-
-    }
+        name: 'Description',
+        message: 'What is the project about?Please give a detailed description',
+    }, {
+        type: 'input',
+        name: 'Table of Contents',
+        message: 'Table of Contents',
+    }, {
+        type: 'input',
+        name: 'Installation',
+        message: 'What does the user need to install on the app?',
+    }, {
+        type: 'input',
+        name: 'Usage',
+        message: 'How is the app used? Give instructions',
+    }, {
+        type: 'input',
+        name: 'License',
+        message: 'What license is being used?',
+    }, {
+        type: 'input',
+        name: 'Contributing',
+        message: 'Who contributed to the project?',
+    }, {
+      type: 'input',
+      name: 'Tests',
+      message: 'What commands are needed to test this app?',
+    }, {
+      type: 'input',
+      name: 'Questions',
+      message: 'Contact info for inquiries',
+    }, {
+      type: 'input',
+      name: 'Username',
+      message: 'What is your Github Username?',
+    }, {
+      type: 'input',
+      name: 'Email',
+      message: 'What is your e-mail address?',
+},
 
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+//function to write README file
+function writeToFile(fileName, data) {
 
-// TODO: Create a function to initialize app
-function init() {
-// Once the questions are passed, it will handle a promise, in which case a .then is needed
-    inquirer.prompt(questions)
-    .then((answers) => { 
-        console.log(answers)
-        // Use user feedback for... whatever!!
-      })
-      .catch((error) => {
-        if (error) { console.log(error)
-          // Prompt couldn't be rendered in the current environment
-        } 
-      });
+fs.writeFile(fileName, data, function(err) {
+console.log(fileName)
+console.log(data)
+
+if (err) {
+return console.log(err)
+
+} else {
+console.log('success')
+
+}
+})
 
 };
 
-// Function call to initialize app
+//function call to initialize program
+function init() {
+inquirer.prompt(questions)
+.then(function(data) {
+  writeToFile('README.md', generatorMarkdown(data));
+  console.log(data)
+})
+
+};
+
+
+//function to call initialize program
 init();
