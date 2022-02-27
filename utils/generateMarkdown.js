@@ -7,7 +7,7 @@ ${data.Description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
-* [Contributing](#contributing)
+* [Contributors](#contributors)
 * [Tests](#tests)
 * [Questions](#questions)
 
@@ -18,12 +18,12 @@ In order to use this app, ${data.Usage}
 # License
 This project is licensed under the ${data.License} license.
 ![Github License](https://img.shields.io.badge/license-MIT-blue.svg)
-# Contributing
-Contributors: ${data.Contributing}
+# Contributors
+ ${data.Contributors}
 # Tests
 The following is needed to run the test: ${data.Tests}
 # Questions
-If you have any questions about the repo, open an issue or contact ${data.Username}
+If you have any questions about the repo, open an issue or contact ${data.Phone} or ${data.Email}.
 `
 }
 

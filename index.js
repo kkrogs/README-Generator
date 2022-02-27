@@ -21,12 +21,20 @@ const questions = [{
         name: 'Usage',
         message: 'How is the app used? Give instructions',
     }, {
-        type: 'input',
+        type: 'list',
         name: 'License',
         message: 'What license is being used?',
+        choices: [
+          'Apache license 2.0',
+          'GNU General Public License v3.0',
+          'MIT License',
+          'Boost Software License 1.0',
+          'ISC',
+          'Mozilla Public License 2.0',
+        ]
     }, {
         type: 'input',
-        name: 'Contributing',
+        name: 'Contributors',
         message: 'Who contributed to the project?',
     }, {
       type: 'input',
@@ -34,8 +42,8 @@ const questions = [{
       message: 'What commands are needed to test this app?',
     }, {
       type: 'input',
-      name: 'Questions',
-      message: 'Contact info for inquiries',
+      name: 'Phone',
+      message: 'What is your phone number for recruiters to contact you at?',
     }, {
       type: 'input',
       name: 'Username',
