@@ -1,3 +1,5 @@
+const Choices = require("inquirer/lib/objects/choices");
+
 function generatorMarkdown(data) {
  return`# ${data.Title}
 https://github.com/${data.Username}/${data.Title}
@@ -17,7 +19,7 @@ The following necessary dependencies must be installed to run the application ${
 In order to use this app, ${data.Usage}
 # License
 This project is licensed under the ${data.License} license.
-![Github License](https://img.shields.io.badge/license-MIT-blue.svg)
+
 # Contributors
  ${data.Contributors}
 # Tests
@@ -26,5 +28,7 @@ The following is needed to run the test: ${data.Tests}
 If you have any questions about the repo, open an issue or contact ${data.Phone} or ${data.Email}.
 `
 }
+
+
 
 module.exports = generatorMarkdown;

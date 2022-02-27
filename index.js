@@ -54,6 +54,7 @@ const questions = [{
       message: 'What is your e-mail address?',
 },
 
+
 ];
 
 //function to write README file
@@ -72,6 +73,12 @@ console.log('success')
 }
 })
 
+};
+
+//creates licenses based on choices
+
+if (condition) {
+  
 };
 
 //function call to initialize program
