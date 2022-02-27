@@ -1,20 +1,21 @@
 function generatorMarkdown(data) {
- return`# ${data.title}
+ return`# ${data.Title}
 https://github.com/${data.Username}/${data.Title}
-#Description
+# Description
 ${data.Description}
-#Table of Contents
+# Table of Contents
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-* Installation
-The following necessary dependencies must be installed to run the application
+
+# Installation
+The following necessary dependencies must be installed to run the application ${data.Installation}
 # Usage
 In order to use this app, ${data.Usage}
-#License
+# License
 This project is licensed under the ${data.License} license.
 ![Github License](https://img.shields.io.badge/license-MIT-blue.svg)
 # Contributing

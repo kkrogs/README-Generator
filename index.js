@@ -14,10 +14,6 @@ const questions = [{
         message: 'What is the project about?Please give a detailed description',
     }, {
         type: 'input',
-        name: 'Table of Contents',
-        message: 'Table of Contents',
-    }, {
-        type: 'input',
         name: 'Installation',
         message: 'What does the user need to install on the app?',
     }, {
