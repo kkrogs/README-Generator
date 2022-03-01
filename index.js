@@ -27,7 +27,7 @@ const questions = [{
         choices: [
           'Apache license 2.0',
           'GNU General Public License v3.0',
-          'MIT License',
+          'MIT',
           'Boost Software License 1.0',
           'ISC',
           'Mozilla Public License 2.0',
@@ -57,6 +57,9 @@ const questions = [{
 
 ];
 
+
+
+
 //function to write README file
 function writeToFile(fileName, data) {
 
@@ -73,12 +76,6 @@ console.log('success')
 }
 })
 
-};
-
-//creates licenses based on choices
-
-if (condition) {
-  
 };
 
 //function call to initialize program
