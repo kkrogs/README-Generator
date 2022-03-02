@@ -28,3 +28,4 @@ If you have any questions about the repository, feel free to contact me at 408-4
 Here is a link to view the repository from Github:
 https://github.com/kkrogs/README-Generator
 
+Youtube Video Instructions on how to Use: https://www.youtube.com/watch?v=KWxLTVtr9Qg
