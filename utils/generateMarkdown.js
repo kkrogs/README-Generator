@@ -1,25 +1,6 @@
 const Choices = require("inquirer/lib/objects/choices");
 
-
-// function getLicenseBadge(answers) {
-//     console.log(answers)
-//     let licenseBadge = "";
-//     let licenseURL = "";
-//       switch (answers.License) {
-//     case 'MIT':
-//           licenseBadge = '![badge](https://img.shields.io/badge/License--brightgreen)'
-//         //   licenseURL = 'https://opensource.org/licenses/MIT' 
-//     break;
-//           case 'ISC':
-//             licenseBadge = 'https://img.shields.io/badge/License-MIT-brightgreen'
-//             // licenseURL = 'https://opensource.org/licenses/MIT' 
-//     break;
-          
-//         };
-//         console.log(licenseBadge)
-//         return licenseBadge
-//       };
-
+//Data that will be included in the README
 function generatorMarkdown(data) { 
  return`# ${data.Title}
  ![badge](https://img.shields.io/badge/License-${data.License}-brightgreen)
@@ -48,12 +29,11 @@ The following is needed to run the test: ${data.Tests}
 # Questions
 If you have any questions about the repository, feel free to contact me at ${data.Phone} or ${data.Email}.
 
-Here is a link to view my project from Github:
+Here is a link to view the repository from Github:
 https://github.com/${data.Username}/${data.Title}
 
 `
 
-// getLicenseBadge();
 
 };
 
