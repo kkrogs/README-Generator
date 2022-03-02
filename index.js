@@ -11,26 +11,26 @@ const questions = [{
     }, {
         type: 'input',
         name: 'Description',
-        message: 'What is the project about?Please give a detailed description',
+        message: 'What is the project about? Please give a detailed description',
     }, {
         type: 'input',
         name: 'Installation',
-        message: 'What does the user need to install on the app?',
+        message: 'What does the user need to install in order to run the application?',
     }, {
         type: 'input',
         name: 'Usage',
-        message: 'How is the app used? Give instructions',
+        message: 'How is the app used? Please give detailed instructions.',
     }, {
         type: 'list',
         name: 'License',
         message: 'What license is being used?',
         choices: [
-          'Apache license 2.0',
-          'GNU General Public License v3.0',
+          'Apache_2.0',
+          'Unlicense',
           'MIT',
-          'Boost Software License 1.0',
+          'Boost_1.0',
           'ISC',
-          'Mozilla Public License 2.0',
+          'Perl',
         ]
     }, {
         type: 'input',
@@ -39,7 +39,7 @@ const questions = [{
     }, {
       type: 'input',
       name: 'Tests',
-      message: 'What commands are needed to test this app?',
+      message: 'What tests and commands are needed in order to test this application?',
     }, {
       type: 'input',
       name: 'Phone',
